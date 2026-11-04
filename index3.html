@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#132b4b" />
+<meta name="description" content="천안시 청년정책 2026: 청년의 미래를 여는 도시, 천안. 인터랙티브 정책 프레젠테이션" />
+<title>청년의 미래를 여는 도시, 천안 | 2026 청년정책</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a href="#presentation" class="skip-link">프레젠테이션으로 이동</a>
+<div id="app">
+<header class="topbar">
+  <a class="brand" href="#slide-1" aria-label="첫 슬라이드로 이동"><span class="brand-dot"></span><span class="brand-name">CHEONAN <em>/</em> YOUTH POLICY</span><span class="brand-year">2026</span></a>
+  <nav class="top-nav" aria-label="슬라이드 섹션">
+    <button type="button" data-jump="1" class="nav-link">소개</button>
+    <button type="button" data-jump="2" class="nav-link">현황·비전</button>
+    <button type="button" data-jump="5" class="nav-link">정책 분야</button>
+    <button type="button" data-jump="9" class="nav-link">성과·방향</button>
+  </nav>
+  <div class="top-actions"><button id="overviewBtn" class="icon-btn" aria-label="전체 슬라이드 목차 보기" title="전체 슬라이드 목차"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></button><button id="detailBtn" class="icon-btn" aria-label="슬라이드 상세 텍스트 열기" title="슬라이드 상세 텍스트"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button><button id="fullscreenBtn" class="icon-btn" aria-label="전체화면 보기" title="전체화면 (F)"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></button></div>
+</header>
+<main id="presentation" class="presentation" tabindex="-1" aria-label="천안시 청년정책 웹 프레젠테이션">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="presentation-grid">
+    <div class="stage-shell">
+      <div class="slide-stage" id="stage" aria-live="polite" aria-atomic="true">
+        <img id="slideImage" src="assets/slide-1.png" alt="청년의 미래를 여는 도시, 천안. 일자리부터 자립까지 청년의 가능성을 연결합니다." width="1601" height="900" draggable="false" />
+        <div id="hotspots" class="hotspots"></div>
+        <div id="stageHint" class="stage-hint">카드를 선택해 주요 내용을 살펴보세요</div>
+      </div>
+      <div class="stage-bottom"><div class="stage-identity"><span class="live-pulse"></span><span>2026 천안시 청년정책</span></div><div class="slide-count"><span id="currentNum">01</span><span class="num-divider">/</span><span>10</span></div></div>
+    </div>
+    <aside class="sidebar" id="sidebar" aria-label="슬라이드 안내 및 탐색">
+      <div class="sidebar-top"><span class="eyebrow">PRESENTATION GUIDE</span><span class="side-indicator">2026.11</span></div>
+      <h1 id="sideTitle">청년의 미래를<br>여는 도시, 천안</h1>
+      <p id="sideSubtitle">일자리부터 자립까지, 청년의 가능성을 연결합니다.</p>
+      <div class="side-rule"></div>
+      <div id="quickPoints" class="quick-points"></div>
+      <div class="side-spacer"></div>
+      <div class="side-footer"><button id="textOpenBtn" class="text-open">내용 자세히 보기 <span>↗</span></button><div class="key-hint"><kbd>←</kbd> <kbd>→</kbd><span>슬라이드 이동</span></div></div>
+    </aside>
+  </div>
+  <div class="bottom-controls"><div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div><div class="control-row"><div class="control-left"><button id="prevBtn" class="control-btn" aria-label="이전 슬라이드"><span aria-hidden="true">←</span><span>이전</span></button><button id="nextBtn" class="control-btn primary" aria-label="다음 슬라이드"><span>다음</span><span aria-hidden="true">→</span></button></div><div class="slide-tabs" id="slideTabs" aria-label="슬라이드 빠른 이동"></div><span class="control-caption">SCROLL TO EXPLORE · CHEONAN 2026</span></div></div>
+</main>
+<footer class="site-footer">CHEONAN YOUTH POLICY <span>© 2026 · 첨부된 발표자료 기반</span></footer>
+</div>
+<div id="overview" class="overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="전체 슬라이드 목차"><div class="overlay-inner"><div class="modal-heading"><div><span class="eyebrow">ALL SLIDES</span><h2>프레젠테이션 목차</h2></div><button class="close-btn" data-close="overview" aria-label="목차 닫기">×</button></div><div id="overviewGrid" class="overview-grid"></div></div></div>
+<div id="details" class="overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="슬라이드 상세 내용"><div class="detail-modal"><div class="modal-heading"><div><span class="eyebrow">SLIDE CONTENT</span><h2 id="detailTitle">슬라이드 상세 내용</h2></div><button class="close-btn" data-close="details" aria-label="상세 내용 닫기">×</button></div><p id="detailSubtitle" class="detail-intro"></p><div id="detailItems" class="detail-items"></div><div id="detailFootnote" class="detail-footnote"></div></div></div>
+<script src="script.js" defer></script>
+</body>
+</html>
